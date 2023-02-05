@@ -5,6 +5,7 @@ class AppColor extends Equatable {
   final Color beige;
   final Color gold;
   final Color goldDimmed;
+  final Color goldDisabled;
   final Color white;
   final Color grey;
   final Color darkGrey;
@@ -14,6 +15,7 @@ class AppColor extends Equatable {
     required this.beige,
     required this.gold,
     required this.goldDimmed,
+    required this.goldDisabled,
     required this.white,
     required this.grey,
     required this.darkGrey,
@@ -24,6 +26,7 @@ class AppColor extends Equatable {
         beige: const Color(0xFFE1D5C9),
         gold: const Color(0xFFC39550),
         goldDimmed: const Color(0xFFC39550).withOpacity(0.2),
+        goldDisabled: const Color(0xFFC1A780),
         white: const Color(0xFFFFFFFF),
         grey: const Color(0xFFC4C4C4),
         darkGrey: const Color(0xFF212325),
@@ -35,6 +38,7 @@ class AppColor extends Equatable {
         beige,
         gold,
         goldDimmed,
+        goldDisabled,
         white,
         grey,
         darkGrey,
