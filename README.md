@@ -1,16 +1,6 @@
-# ddd_base_project
+# Welcome to DDD test task
 
-A new Flutter project.
+Project uses Flutter version `3.7.1`
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Go to your Flutter root folder (mine is under `/Users/raitissaripo/Developer/flutter`), open terminal and type `git checkout flutter 3.7.1`.
+Open project and run `flutter pub get`.
