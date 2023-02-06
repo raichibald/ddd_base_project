@@ -9,4 +9,4 @@ Open project and run `flutter pub get`.
 - Fork the project
 - Open PR in your fork
 - Add screenshot and/or screen recording
-- Assing @maxpelna to review it
+- Assing @maxpelna to review it & @raichibald to notify that the task has been completed
