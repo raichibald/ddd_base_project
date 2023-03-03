@@ -43,22 +43,18 @@ class HomePage extends StatelessWidget {
 
   Future<void> _openTimePicker(BuildContext context) async {
     final theme = AppTheme.of(context);
+    final color = theme.color;
     final typography = theme.typography;
 
-    await showDialog(
+    await showModalBottomSheet(
       context: context,
-      builder: (BuildContext context) => AlertDialog(
-        title: Text(
-          "Select time",
-          textAlign: TextAlign.center,
-          style: typography.headline1,
-        ),
-        content: TimePicker(
-          onTimeSelected: (int hour, int minute) {
-            print("Hour: $hour");
-            print("Minute: $minute");
-          },
-        ),
+      backgroundColor: color.darkGrey.withOpacity(0.65),
+      useSafeArea: true,
+      builder: (BuildContext context) => TimePicker(
+        onTimeSelected: (int hour, int minute) {
+          print("Hour: $hour");
+          print("Minute: $minute");
+        },
       ),
     );
   }
