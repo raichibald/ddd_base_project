@@ -1,4 +1,5 @@
 import 'package:ddd_base_project/design_system/widget/app_theme.dart';
+import 'package:ddd_base_project/home/widget/time_picker.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatelessWidget {
@@ -23,9 +24,7 @@ class HomePage extends StatelessWidget {
               MaterialButton(
                 highlightColor: clearColor,
                 splashColor: clearColor,
-                onPressed: () {
-                  // TODO: Implement navigation to time picker
-                },
+                onPressed: () => _openTimePicker(context),
                 child: Container(
                   padding: const EdgeInsets.all(12),
                   color: color.gold,
@@ -38,6 +37,24 @@ class HomePage extends StatelessWidget {
             ],
           )
         ],
+      ),
+    );
+  }
+
+  Future<void> _openTimePicker(BuildContext context) async {
+    final theme = AppTheme.of(context);
+    final color = theme.color;
+    final typography = theme.typography;
+
+    await showModalBottomSheet(
+      context: context,
+      backgroundColor: color.darkGrey.withOpacity(0.65),
+      useSafeArea: true,
+      builder: (BuildContext context) => TimePicker(
+        onTimeSelected: (int hour, int minute) {
+          print("Hour: $hour");
+          print("Minute: $minute");
+        },
       ),
     );
   }
