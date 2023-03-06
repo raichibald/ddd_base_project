@@ -10,6 +10,7 @@ import 'package:flutter/services.dart';
 // 5. Some small UI hacks that don't impact performance, but are still hacky
 // 6. Code is not clean
 // 7. Haptic feedback is in code, but doesn't work on devices I tested
+// 8. Should use normal buttons instead of containers
 
 class DDDTimePickerDialog extends StatefulWidget {
   const DDDTimePickerDialog({Key? key}) : super(key: key);
